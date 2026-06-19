@@ -1,3 +1,1 @@
-ORNA КОДЕКС Mobile Images
-Загрузите 4 файла на GitHub Pages: index.html, style.css, script.js, data.js.
-Картинки в карточках подгружаются по ссылкам playorna.com, поэтому для картинок нужен интернет. Папки img/entries не нужны.
+Загрузите эти 4 файла на GitHub Pages: index.html, style.css, script.js, data.json. Эта версия использует только русские страницы из архива и не включает cookie/меню в описания. Картинки подгружаются с playorna.com.
