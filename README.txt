@@ -1,12 +1,3 @@
-ORNA КОДЕКС — версия для GitHub Pages и iPhone
-
-Загрузите в репозиторий только эти 4 файла:
-- index.html
-- style.css
-- script.js
-- data.json
-
-Папки entries и img больше не нужны. Изображения подгружаются по ссылкам playorna.com/static/.
-
-GitHub Pages:
-Settings → Pages → Deploy from a branch → main → /(root) → Save.
+ORNA КОДЕКС Pro для GitHub Pages
+Загрузите в репозиторий только эти файлы: index.html, style.css, script.js, data.js, README.txt.
+Папки entries и img не нужны. Изображения берутся по ссылкам из оригинального Кодекса, поэтому для картинок нужен интернет.
