@@ -1,3 +1,3 @@
-ORNA КОДЕКС Pro для GitHub Pages
-Загрузите в репозиторий только эти файлы: index.html, style.css, script.js, data.js, README.txt.
-Папки entries и img не нужны. Изображения берутся по ссылкам из оригинального Кодекса, поэтому для картинок нужен интернет.
+ORNA КОДЕКС Mobile Images
+Загрузите 4 файла на GitHub Pages: index.html, style.css, script.js, data.js.
+Картинки в карточках подгружаются по ссылкам playorna.com, поэтому для картинок нужен интернет. Папки img/entries не нужны.
