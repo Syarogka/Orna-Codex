@@ -1,1 +1,0 @@
-Загрузите эти 4 файла на GitHub Pages: index.html, style.css, script.js, data.json. Эта версия использует только русские страницы из архива и не включает cookie/меню в описания. Картинки подгружаются с playorna.com.
