@@ -1,1 +1,63 @@
+name: Unpack Orna site ZIP parts
 
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'orna_codex_site_final_clean.zip.part*'
+
+permissions:
+  contents: write
+
+jobs:
+  unpack-site:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Join and unpack site ZIP
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import zipfile
+
+          parts = sorted(Path('.').glob('orna_codex_site_final_clean.zip.part*'))
+          if not parts:
+              raise SystemExit('Не найдены части архива')
+
+          print('Найдено частей:', len(parts))
+          for p in parts:
+              print(p.name, p.stat().st_size)
+
+          zip_path = Path('orna_codex_site_final_clean.zip')
+          with zip_path.open('wb') as out:
+              for p in parts:
+                  out.write(p.read_bytes())
+
+          print('Склеено:', zip_path, zip_path.stat().st_size)
+
+          with zipfile.ZipFile(zip_path, 'r') as z:
+              z.extractall('.')
+
+          zip_path.unlink()
+          for p in parts:
+              p.unlink()
+
+          print('Готово. Сайт распакован в корень репозитория.')
+          PY
+
+      - name: Commit unpacked site
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
+          git add -A
+
+          if git diff --cached --quiet; then
+            echo "Нет изменений для commit"
+          else
+            git commit -m "Unpack Orna site from ZIP parts"
+            git push
+          fi
