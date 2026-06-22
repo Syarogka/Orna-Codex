@@ -3,14 +3,375 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Orna Codex</title>
-  <meta http-equiv="refresh" content="0; url=codex.html">
-  <script>
-    window.location.replace("codex.html");
-  </script>
+  <meta name="robots" content="index,follow">
+  <meta name="description" content="ORNA КОДЕКС — фанатская база знаний по Orna RPG. Предметы, классы, события, гайды.">
+  <meta name="theme-color" content="#08091a">
+  <title>ORNA КОДЕКС — База знаний</title>
+  <link rel="shortcut icon" href="static/img/favicon.png">
+  <link rel="stylesheet" href="static/style-codex.css">
 </head>
 <body>
-  <p>Открываю Orna Codex...</p>
-  <p><a href="codex.html">Перейти вручную</a></p>
+
+<!-- ======================== НАВБАР ======================== -->
+<nav class="ck-nav" aria-label="Главная навигация">
+  <div class="ck-nav-inner">
+    <a class="ck-nav-brand" href="index.html" aria-label="На главную">
+      <img src="static/img/orna2.png" alt="Orna RPG" height="34">
+      <span class="ck-nav-brand-text">КОДЕКС</span>
+    </a>
+    <div class="ck-nav-links" role="list">
+      <a class="ck-nav-link active" href="index.html" role="listitem">Главная</a>
+      <a class="ck-nav-link" href="codex.html" role="listitem">Кодекс</a>
+      <a class="ck-nav-link" href="items_by_classes_events_ru.html" role="listitem">
+        Вещи по классам
+        <span class="ck-nav-badge">NEW</span>
+      </a>
+      <a class="ck-nav-link" href="classes_by_tier_ru.html" role="listitem">Классы</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ======================== HERO ======================== -->
+<section class="ck-hero" aria-labelledby="hero-title">
+  <p class="ck-hero-eyebrow">Orna RPG · Фанатская база знаний</p>
+  <h1 id="hero-title">ORNA<br>КОДЕКС</h1>
+  <p class="ck-hero-sub">
+    Справочник эндгейм-игрока: кодекс предметов, классы по рангам,
+    вещи событий и гайды по билдам — всё в одном месте.
+  </p>
+  <div class="ck-hero-actions">
+    <a class="ck-btn ck-btn-primary" href="codex.html">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+      Открыть кодекс
+    </a>
+    <a class="ck-btn ck-btn-secondary" href="items_by_classes_events_ru.html">
+      Вещи по классам
+    </a>
+  </div>
+</section>
+
+<!-- ======================== СТАТБОКСЫ ======================== -->
+<div class="ck-section" style="padding-top: 32px; padding-bottom: 32px;">
+  <div class="wrap">
+    <div class="ck-stats-row">
+      <div class="ck-stat-box"><b>1006</b><span>предметов</span></div>
+      <div class="ck-stat-box"><b>683</b><span>диковин</span></div>
+      <div class="ck-stat-box"><b>27</b><span>событий</span></div>
+      <div class="ck-stat-box"><b>60</b><span>классов</span></div>
+      <div class="ck-stat-box"><b>★10</b><span>макс. ранг</span></div>
+      <div class="ck-stat-box"><b>RU</b><span>язык</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ======================== ОСНОВНЫЕ РАЗДЕЛЫ ======================== -->
+<section class="ck-section" aria-labelledby="section-main">
+  <div class="wrap">
+    <div class="ck-section-head">
+      <p class="ck-section-eyebrow">Разделы сайта</p>
+      <h2 id="section-main">Что <span class="gold">найдёшь</span> здесь</h2>
+    </div>
+
+    <!-- Крупные фичер-карточки — главные инструменты -->
+    <div class="ck-feature-grid" style="margin-bottom: 20px;">
+
+      <a class="ck-feature-card" href="codex.html" aria-label="Кодекс Orna">
+        <div class="ck-feature-card-img">
+          <img src="static/img/northern_forge_small.png" alt="">
+        </div>
+        <div class="ck-feature-card-body">
+          <h3>Кодекс</h3>
+          <p>
+            Полная база предметов, классов, монстров, рейдов и подземелий —
+            зеркало официального кодекса playorna.com на русском языке.
+          </p>
+          <div class="ck-feature-card-stats">
+            <span class="ck-feature-stat"><b>∞</b> предметов</span>
+            <span class="ck-feature-stat"><b>RU</b> интерфейс</span>
+            <span class="ck-feature-stat">Поиск + фильтры</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="ck-feature-card" href="items_by_classes_events_ru.html" aria-label="Вещи по классам и событиям">
+        <div class="ck-feature-card-img" style="font-size: 32px;">⚔️</div>
+        <div class="ck-feature-card-body">
+          <h3>Вещи по классам и событиям</h3>
+          <p>
+            1006 предметов, разобранных по классам и 27 событиям:
+            что куда идёт, какие диковины из какого события, фильтрация по рангу и слоту.
+          </p>
+          <div class="ck-feature-card-stats">
+            <span class="ck-feature-stat"><b>1006</b> предметов</span>
+            <span class="ck-feature-stat"><b>27</b> событий</span>
+            <span class="ck-feature-stat"><b>683</b> диковины</span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+
+    <!-- Мелкие карточки дополнительных разделов -->
+    <div class="ck-hub-grid">
+
+      <a class="ck-hub-card" href="classes_by_tier_ru.html">
+        <div style="display:flex; align-items:center; gap:12px;">
+          <div class="ck-hub-card-icon">
+            <img src="static/img/classes2/gilgamesh/default_m.png" alt="">
+          </div>
+          <div>
+            <h3>Классы по рангам</h3>
+          </div>
+        </div>
+        <p>60 классов ★1–★10 с умениями, способностями и описаниями. Портреты, характеристики, ссылки на кодекс.</p>
+        <div class="ck-hub-card-meta">
+          <span class="ck-hub-card-tag">★1–★10</span>
+          <span class="ck-hub-card-tag">60 классов</span>
+        </div>
+        <span class="ck-hub-card-arrow">→</span>
+      </a>
+
+      <a class="ck-hub-card" href="codex/items/">
+        <div style="display:flex; align-items:center; gap:12px;">
+          <div class="ck-hub-card-icon" style="font-size:24px;">🗡️</div>
+          <div>
+            <h3>Предметы кодекса</h3>
+          </div>
+        </div>
+        <p>Полный список предметов из кодекса playorna.com. Оружие, броня, аксессуары, оффхенды — с характеристиками.</p>
+        <div class="ck-hub-card-meta">
+          <span class="ck-hub-card-tag">Оружие</span>
+          <span class="ck-hub-card-tag">Броня</span>
+          <span class="ck-hub-card-tag">Аксессуары</span>
+        </div>
+        <span class="ck-hub-card-arrow">→</span>
+      </a>
+
+      <a class="ck-hub-card" href="codex/classes/">
+        <div style="display:flex; align-items:center; gap:12px;">
+          <div class="ck-hub-card-icon">
+            <img src="static/img/classes2/heretic/default_m.png" alt="">
+          </div>
+          <div>
+            <h3>Классы / Кодекс</h3>
+          </div>
+        </div>
+        <p>Страницы классов из официального кодекса с умениями и пассивными способностями. Русская локализация.</p>
+        <div class="ck-hub-card-meta">
+          <span class="ck-hub-card-tag">RU</span>
+          <span class="ck-hub-card-tag">Умения</span>
+        </div>
+        <span class="ck-hub-card-arrow">→</span>
+      </a>
+
+      <a class="ck-hub-card" href="codex/monsters/">
+        <div style="display:flex; align-items:center; gap:12px;">
+          <div class="ck-hub-card-icon" style="font-size:24px;">👾</div>
+          <div>
+            <h3>Монстры</h3>
+          </div>
+        </div>
+        <p>Монстры и боссы из кодекса. Рейдовые боссы, подземелья, странствующие NPC.</p>
+        <div class="ck-hub-card-meta">
+          <span class="ck-hub-card-tag">Монстры</span>
+          <span class="ck-hub-card-tag">Боссы</span>
+          <span class="ck-hub-card-tag">Рейды</span>
+        </div>
+        <span class="ck-hub-card-arrow">→</span>
+      </a>
+
+      <a class="ck-hub-card" href="codex/raids/">
+        <div style="display:flex; align-items:center; gap:12px;">
+          <div class="ck-hub-card-icon" style="font-size:24px;">🔥</div>
+          <div>
+            <h3>Рейды</h3>
+          </div>
+        </div>
+        <p>Список рейдовых боссов с характеристиками и дропом. Актуальные данные из кодекса.</p>
+        <div class="ck-hub-card-meta">
+          <span class="ck-hub-card-tag">Дроп</span>
+          <span class="ck-hub-card-tag">Характеристики</span>
+        </div>
+        <span class="ck-hub-card-arrow">→</span>
+      </a>
+
+      <a class="ck-hub-card" href="codex/dungeons/">
+        <div style="display:flex; align-items:center; gap:12px;">
+          <div class="ck-hub-card-icon" style="font-size:24px;">🏰</div>
+          <div>
+            <h3>Подземелья</h3>
+          </div>
+        </div>
+        <p>Обычные и бесконечные подземелья: модификаторы, механики, уровни сложности.</p>
+        <div class="ck-hub-card-meta">
+          <span class="ck-hub-card-tag">Бесконечные</span>
+          <span class="ck-hub-card-tag">Механики</span>
+        </div>
+        <span class="ck-hub-card-arrow">→</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ======================== БЫСТРЫЙ ДОСТУП — КЛАССЫ ======================== -->
+<section class="ck-section" id="classes" aria-labelledby="section-classes">
+  <div class="wrap">
+    <div class="ck-section-head">
+      <p class="ck-section-eyebrow">T10 эндгейм</p>
+      <h2 id="section-classes">Классы <span class="gold">★10</span></h2>
+      <p style="margin:0;">Карточки ключевых эндгейм-классов. Нажми на класс — перейдёшь на его страницу в кодексе.</p>
+    </div>
+
+    <div class="ck-class-grid">
+
+      <a class="ck-class-card" href="codex/classes/gilgamesh/?lang=ru" style="text-decoration:none; color:inherit; display:block;">
+        <div class="ck-class-topline">
+          <div class="ck-class-portrait">
+            <img src="static/img/classes2/gilgamesh/default_m.png" alt="Gilgamesh">
+          </div>
+          <div>
+            <h3>Gilgamesh</h3>
+            <div class="ck-class-meta">
+              <span class="ck-class-meta-tag">★10</span>
+              <span class="ck-class-meta-tag">Воин</span>
+              <span class="ck-class-meta-tag">Collateral Damage</span>
+            </div>
+          </div>
+        </div>
+        <p style="font-size:13px; margin:0;">Урса-билд Gilgamesh: максимальный урон через Collateral Damage, приоритет Ward. Главный ДД эндгейма.</p>
+      </a>
+
+      <a class="ck-class-card" href="codex/classes/beowulf/?lang=ru" style="text-decoration:none; color:inherit; display:block;">
+        <div class="ck-class-topline">
+          <div class="ck-class-portrait">
+            <img src="static/img/classes2/beowulf/default_m.png" alt="Beowulf">
+          </div>
+          <div>
+            <h3>Beowulf</h3>
+            <div class="ck-class-meta">
+              <span class="ck-class-meta-tag">★10</span>
+              <span class="ck-class-meta-tag">Маг/ближний бой</span>
+            </div>
+          </div>
+        </div>
+        <p style="font-size:13px; margin:0;">Двойное оружие, магический ДД. Мощный гибридный класс с уникальными пассивками.</p>
+      </a>
+
+      <a class="ck-class-card" href="codex/classes/heretic/?lang=ru" style="text-decoration:none; color:inherit; display:block;">
+        <div class="ck-class-topline">
+          <div class="ck-class-portrait">
+            <img src="static/img/classes2/heretic/default_m.png" alt="Heretic">
+          </div>
+          <div>
+            <h3>Heretic</h3>
+            <div class="ck-class-meta">
+              <span class="ck-class-meta-tag">★10</span>
+              <span class="ck-class-meta-tag">Маг</span>
+              <span class="ck-class-meta-tag">4 билда</span>
+            </div>
+          </div>
+        </div>
+        <p style="font-size:13px; margin:0;">Versatile T10 маг: рейды, PvP, dungeons. Четыре специализированных билда под каждый контент.</p>
+      </a>
+
+      <a class="ck-class-card" href="codex/classes/deity/?lang=ru" style="text-decoration:none; color:inherit; display:block;">
+        <div class="ck-class-topline">
+          <div class="ck-class-portrait">
+            <img src="static/img/classes2/deity/default_m.png" alt="Deity">
+          </div>
+          <div>
+            <h3>Deity</h3>
+            <div class="ck-class-meta">
+              <span class="ck-class-meta-tag">★10</span>
+              <span class="ck-class-meta-tag">Танк</span>
+              <span class="ck-class-meta-tag">Ward</span>
+            </div>
+          </div>
+        </div>
+        <p style="font-size:13px; margin:0;">Ursa ward-танк. Экстремальный Ward, поддержка рейда, бесконечная выживаемость.</p>
+      </a>
+
+    </div>
+
+    <div style="margin-top:20px; text-align:center;">
+      <a class="ck-btn ck-btn-secondary" href="classes_by_tier_ru.html">
+        Все 60 классов →
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== СОБЫТИЯ ======================== -->
+<section class="ck-section" id="events" aria-labelledby="section-events">
+  <div class="wrap">
+    <div class="ck-section-head">
+      <p class="ck-section-eyebrow">Активность</p>
+      <h2 id="section-events">События и <span class="gold">диковины</span></h2>
+      <p style="margin:0;">27 событий Orna. Находи вещи, которые выпадают только в конкретных событиях.</p>
+    </div>
+    <div style="display:flex; gap:14px; flex-wrap:wrap; align-items:stretch;">
+
+      <div class="ck-event-card" style="flex:1; min-width:240px;">
+        <div class="ck-event-card-head">
+          <h3>Рагнарёк</h3>
+          <span class="ck-event-count">+60 вещей</span>
+        </div>
+        <p style="font-size:13px; margin:0 0 10px; color:var(--muted);">Лучшие T10 диковины — Thor, Odin, Heimdall наборы. Ключевое событие для эндгейм-экипировки.</p>
+        <a class="ck-btn ck-btn-ghost" href="items_by_classes_events_ru.html#events" style="font-size:12px; padding:7px 14px;">
+          Смотреть вещи
+        </a>
+      </div>
+
+      <div class="ck-event-card" style="flex:1; min-width:240px;">
+        <div class="ck-event-card-head">
+          <h3>Дикая зимняя охота</h3>
+          <span class="ck-event-count">+40 вещей</span>
+        </div>
+        <p style="font-size:13px; margin:0 0 10px; color:var(--muted);">Зимние диковины — Herne, Wild Hunt наборы. Важно для Heretic и Beowulf билдов.</p>
+        <a class="ck-btn ck-btn-ghost" href="items_by_classes_events_ru.html#events" style="font-size:12px; padding:7px 14px;">
+          Смотреть вещи
+        </a>
+      </div>
+
+      <div class="ck-event-card" style="flex:1; min-width:240px;">
+        <div class="ck-event-card-head">
+          <h3>Пришествие Сакральных</h3>
+          <span class="ck-event-count">+35 вещей</span>
+        </div>
+        <p style="font-size:13px; margin:0 0 10px; color:var(--muted);">Священные диковины — Celestial наборы. Aethric-tier контент для топ-игроков.</p>
+        <a class="ck-btn ck-btn-ghost" href="items_by_classes_events_ru.html#events" style="font-size:12px; padding:7px 14px;">
+          Смотреть вещи
+        </a>
+      </div>
+
+    </div>
+    <div style="margin-top:18px; text-align:center;">
+      <a class="ck-btn ck-btn-secondary" href="items_by_classes_events_ru.html">
+        Все 27 событий и 683 диковины →
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== ФУТЕР ======================== -->
+<footer class="ck-footer" role="contentinfo">
+  <div class="wrap">
+    <div class="ck-footer-logo">
+      <img src="static/img/orna2.png" alt="Orna RPG">
+      ORNA КОДЕКС
+    </div>
+    <p>
+      Неофициальная фанатская база знаний ·
+      Данные из <a href="https://playorna.com/codex/" rel="noopener" target="_blank">playorna.com/codex</a>
+    </p>
+    <p>
+      <a href="https://playorna.com/" rel="noopener" target="_blank">Orna RPG</a> ·
+      <a href="https://play.google.com/store/apps/details?id=playorna.com.orna" rel="noopener" target="_blank">Google Play</a> ·
+      <a href="https://apps.apple.com/us/app/orna-a-geo-rpg/id1451775309" rel="noopener" target="_blank">App Store</a>
+    </p>
+  </div>
+</footer>
+
 </body>
 </html>

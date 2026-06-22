@@ -3,57 +3,88 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Классы Orna — собрано из ZIP по рангам</title>
+<meta name="theme-color" content="#08091a">
+<title>Классы Orna по рангам / Кодекс Orna</title>
+<link rel="shortcut icon" href="static/img/favicon.png">
+<link rel="stylesheet" href="static/style-codex.css">
 <style>
-:root { --bg:#090b11; --panel:#111622; --panel2:#171d2a; --text:#e8edf8; --muted:#98a2b3; --accent:#f1c75b; --line:#2b3345; --danger:#ffcc80; }
-* { box-sizing:border-box }
-body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background:radial-gradient(circle at top,#20283a,#090b11 55%); color:var(--text); }
-a { color:#8cc6ff; text-decoration:none }
-a:hover { text-decoration:underline }
-.hero { padding:34px 18px 22px; text-align:center; border-bottom:1px solid var(--line); background:linear-gradient(180deg,rgba(241,199,91,.12),rgba(0,0,0,0)); }
-.hero h1 { margin:0 0 10px; font-size:clamp(28px,5vw,48px); letter-spacing:.5px }
-.hero p { max-width:950px; margin:8px auto; color:var(--muted); line-height:1.55 }
-.wrap { width:min(1260px, calc(100% - 28px)); margin:0 auto; }
-.controls { position:sticky; top:0; z-index:3; background:rgba(9,11,17,.92); backdrop-filter:blur(10px); border-bottom:1px solid var(--line); padding:12px 0; }
-.controls .row { display:flex; gap:10px; flex-wrap:wrap; align-items:center; justify-content:center; }
-input, button { background:var(--panel); color:var(--text); border:1px solid var(--line); border-radius:12px; padding:10px 12px; font-size:15px }
-button { cursor:pointer }
-button.active { border-color:var(--accent); color:#111; background:var(--accent); font-weight:700 }
-.notice { margin:18px 0; padding:14px 16px; border:1px solid #5d4b26; background:rgba(241,199,91,.08); border-radius:16px; color:#f7e6b7; }
-.notice h2 { margin:0 0 8px; font-size:18px }
-.notice ul { margin:8px 0 0 20px; padding:0; columns:2; column-gap:30px; }
-@media (max-width:750px) { .notice ul { columns:1 } }
-.tier-section { padding:16px 0 22px; }
-.tier-section h2 { display:flex; align-items:end; gap:12px; border-bottom:1px solid var(--line); padding-bottom:8px; margin:8px 0 14px; color:var(--accent); }
-.tier-section h2 span { color:var(--muted); font-size:14px; font-weight:500 }
-.grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(310px,1fr)); gap:14px; }
-.card { background:linear-gradient(180deg,var(--panel2),var(--panel)); border:1px solid var(--line); border-radius:18px; padding:14px; box-shadow:0 10px 28px rgba(0,0,0,.22); }
-.topline { display:flex; gap:12px; align-items:center; }
-.portrait { flex:0 0 auto; width:62px; height:62px; display:grid; place-items:center; background:#0c111c; border:1px solid var(--line); border-radius:15px; }
-.icon { max-width:54px; max-height:54px; image-rendering:auto; }
-.noimg { width:54px; height:54px; display:grid; place-items:center; color:var(--muted) }
-h3 { margin:0 0 5px; font-size:20px; line-height:1.2 }
-.meta { display:flex; flex-wrap:wrap; gap:6px; color:var(--muted); font-size:12px; }
-.meta span { border:1px solid var(--line); border-radius:999px; padding:3px 8px; background:#0d1320 }
-.meta .lang { color:var(--danger); border-color:#6b4c20 }
-.desc { color:#d8deea; line-height:1.45; min-height:44px; }
-details { border-top:1px solid var(--line); margin-top:10px; padding-top:8px; }
-summary { cursor:pointer; color:var(--accent); font-weight:700; }
-.skill-list { list-style:none; padding:0; margin:8px 0 0; display:grid; gap:6px; }
-.skill-list li { display:flex; align-items:center; gap:8px; min-height:28px; }
-.mini { width:22px; height:22px; object-fit:contain; flex:0 0 22px; }
-.abilities { display:grid; gap:10px; margin-top:8px; }
-.ability { display:flex; gap:9px; align-items:flex-start; }
-.ability p { margin:2px 0 5px; color:var(--muted); line-height:1.35 }
-.stats { display:flex; flex-wrap:wrap; gap:5px; }
-.stats span { background:#0d1320; border:1px solid var(--line); border-radius:999px; padding:2px 7px; color:#cdd6e3; font-size:12px; }
-.source { display:inline-block; margin-top:12px; font-size:12px; color:var(--muted); }
-.footer { color:var(--muted); padding:28px 0 40px; text-align:center; }
-.muted { color:var(--muted); font-size:12px; }
-.hidden { display:none !important }
+/* Переопределения под style-codex.css */
+body { background: var(--bg); }
+a { color: var(--blue); }
+/* Сохраняем tier-секции из оригинала, только цвета */
+.hero {
+  padding: 32px 18px 22px;
+  border-bottom: 1px solid var(--line);
+  background: linear-gradient(180deg, rgba(100,120,220,.1), transparent);
+  text-align: center;
+}
+.hero h1 { margin: 0 0 10px; font-family: Georgia, serif; color: var(--gold);
+  font-size: clamp(26px, 4vw, 40px); }
+.hero p { max-width: 950px; margin: 8px auto; color: var(--muted); line-height: 1.55; }
+.controls { position: sticky; top: 58px; z-index: 3;
+  background: rgba(8,9,26,.92); backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line); padding: 12px 0; }
+.controls .row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; justify-content: center; }
+input, button { background: var(--panel); color: var(--text);
+  border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px; font-size: 15px; }
+button { cursor: pointer; }
+button.active { border-color: var(--gold); color: #111; background: var(--gold); font-weight: 700; }
+.notice { margin: 18px 0; padding: 14px 16px; border: 1px solid var(--gold-dim);
+  background: rgba(217,164,65,.07); border-radius: 16px; color: #f7e6b7; }
+.notice h2 { margin: 0 0 8px; font-size: 18px; color: var(--gold); }
+.notice ul { margin: 8px 0 0 20px; padding: 0; columns: 2; column-gap: 30px; }
+@media (max-width:750px) { .notice ul { columns: 1 } }
+.tier-section { padding: 16px 0 22px; }
+.tier-section h2 { display: flex; align-items: end; gap: 12px;
+  border-bottom: 1px solid var(--line); padding-bottom: 8px; margin: 8px 0 14px; color: var(--gold); }
+.tier-section h2 span { color: var(--muted); font-size: 14px; font-weight: 500; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(310px,1fr)); gap: 14px; }
+.card { background: linear-gradient(160deg, var(--panel2), var(--panel));
+  border: 1px solid var(--line); border-radius: 18px; padding: 14px;
+  box-shadow: 0 10px 28px rgba(0,0,0,.22); }
+.topline { display: flex; gap: 12px; align-items: center; }
+.portrait { flex: 0 0 auto; width: 62px; height: 62px; display: grid; place-items: center;
+  background: var(--bg2, #0d0f22); border: 1px solid var(--line); border-radius: 15px; }
+.icon { max-width: 54px; max-height: 54px; }
+.noimg { width: 54px; height: 54px; display: grid; place-items: center; color: var(--muted); }
+h3 { margin: 0 0 5px; font-size: 20px; line-height: 1.2; color: var(--gold); }
+.meta { display: flex; flex-wrap: wrap; gap: 6px; color: var(--muted); font-size: 12px; }
+.meta span { border: 1px solid var(--line); border-radius: 999px; padding: 3px 8px; background: var(--chip); }
+.meta .lang { color: var(--danger); border-color: #6b4c20; }
+.desc { color: #d8deea; line-height: 1.45; min-height: 44px; }
+details { border-top: 1px solid var(--line); margin-top: 10px; padding-top: 8px; }
+summary { cursor: pointer; color: var(--gold); font-weight: 700; }
+.skill-list { list-style: none; padding: 0; margin: 8px 0 0; display: grid; gap: 6px; }
+.skill-list li { display: flex; align-items: center; gap: 8px; min-height: 28px; }
+.mini { width: 22px; height: 22px; object-fit: contain; flex: 0 0 22px; }
+.abilities { display: grid; gap: 10px; margin-top: 8px; }
+.ability { display: flex; gap: 9px; align-items: flex-start; }
+.ability p { margin: 2px 0 5px; color: var(--muted); line-height: 1.35; }
+.stats { display: flex; flex-wrap: wrap; gap: 5px; }
+.stats span { background: var(--chip); border: 1px solid var(--line);
+  border-radius: 999px; padding: 2px 7px; color: #cdd6e3; font-size: 12px; }
+.source { display: inline-block; margin-top: 12px; font-size: 12px; color: var(--muted); }
+.footer { color: var(--muted); padding: 28px 0 40px; text-align: center; }
+.muted { color: var(--muted); font-size: 12px; }
+.hidden { display: none !important; }
+.wrap { width: min(1260px, calc(100% - 28px)); margin: 0 auto; }
 </style>
 </head>
 <body>
+<nav class="ck-nav">
+  <div class="ck-nav-inner">
+    <a class="ck-nav-brand" href="index.html">
+      <img src="static/img/orna2.png" alt="Orna RPG" height="32">
+      <span class="ck-nav-brand-text">КОДЕКС</span>
+    </a>
+    <div class="ck-nav-links">
+      <a class="ck-nav-link" href="index.html">Главная</a>
+      <a class="ck-nav-link" href="codex.html">Кодекс</a>
+      <a class="ck-nav-link" href="items_by_classes_events_ru.html">Вещи по классам</a>
+      <a class="ck-nav-link active" href="classes_by_tier_ru.html">Классы</a>
+    </div>
+  </div>
+</nav>
 <header class="hero">
   <div class="wrap">
     <h1>Классы Orna — собрано по рангам</h1>
