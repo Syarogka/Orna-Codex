@@ -1,0 +1,1744 @@
+<!doctype html>
+<html lang="nb">
+
+
+<head>
+	
+	<meta name="google-site-verification" content="uBSAwQ1WFIIyInSl2ELElKwJpWOWjKVhb82XIpgHa5Q" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="robots" content="index,follow" />
+	<meta name="theme-color" content="#000" />
+	<meta name="description" content="Fjern II: Kurerer alle statuseffekter." />
+	<meta name="keywords" content="Fjern II,GPS MMO, Location based, RPG, MMORPG, Android, mobile game, geolocation game" />
+
+	
+	<meta property="og:title" content="Fjern II - Orna RPG Series" />
+	<meta property="og:description"
+		content="Fjern II: Kurerer alle statuseffekter." />
+	<meta property="og:image" content="../../static/img/spells/heal.png" />
+	
+
+	<link rel="shortcut icon" href="../../static/img/favicon.png">
+	<title>Fjern II / Kodeks / Orna RPG Series | New Old RPGs</title>
+
+	<script>
+		window.REALM = '';
+		window.APP_VERSION = '';
+		window.CONTENT_VERSION = '';
+		window.STATIC_URL = '';
+		window.LANG_CODE = 'nb';
+	</script>
+
+	
+	
+	<link  rel="stylesheet" href="../../static/vendor-BbLJ9bNe.css" />
+<link  rel="stylesheet" href="../../static/web-BZxCBmLY.css" />
+<link  rel="stylesheet" href="../../static/fonts-BWxys5pk.css" />
+<script type="module" crossorigin="" src="../../static/web-CcFzXSIx.js"></script>
+<link href="../../static/vendor-DTF-i4ak.js" type="text/javascript" crossorigin="anonymous" rel="modulepreload" as="script" />
+<link href="../../static/modulepreload-polyfill-CeUlryTZ.js" type="text/javascript" crossorigin="anonymous" rel="modulepreload" as="script" />
+</head>
+
+<body>
+	
+	<nav id="nav">
+		<a class="branding" href="/">
+			<img title="Orna: A GPS RPG" src="../../static/img/orna2.png">
+		</a>
+
+		<a class="nav-item nav-item-desktop" href="/calendar/"> Begivenheter</a>
+		<a class="nav-item nav-item-desktop" href="/releases/"> Oppdateringer</a>
+		<a class="nav-item nav-item-desktop" href="/codex/">Kodeks</a>
+		<a class="nav-item nav-item-desktop" target="_blank" href="https://blog.ornarpg.com/">Blog</a>
+		<a class="nav-item nav-item-desktop" target="_blank" href="https://merch.northernforge.com/"> Varer</a>
+		<a class="nav-item nav-item-desktop nav-item-lang" id="nav-language-link"><img src="../../static/img/flags/norway.png"></a>
+
+		<div class="mobile-menu-link" id="mobile-menu-link">
+			<div class="mobile-menu-link-bar"></div>
+			<div class="mobile-menu-link-bar"></div>
+			<div class="mobile-menu-link-bar"></div>
+		</div>
+	</nav>
+
+	<div id="mobile-menu">
+		<div class="mobile-menu-item"><a href="/calendar/">Begivenheter</a></div>
+		<div class="mobile-menu-item"><a href="/releases/"> Oppdateringer</a></div>
+		<div class="mobile-menu-item"><a href="/codex/"> Kodeks</a></div>
+		<div class="mobile-menu-item"><a target="_blank" href="https://blog.ornarpg.com/">Blog</a></div>
+		<div class="mobile-menu-item"><a target="_blank" href="https://merch.northernforge.com/"> Varer</a></div>
+		<div class="mobile-menu-item"><a target="_blank" href="https://play.google.com/store/apps/details?id=playorna.com.orna&utm_source=website&utm_medium=website&utm_campaign=website">Google Play</a></div>
+		<div class="mobile-menu-item"><a target="_blank" href="https://apps.apple.com/us/app/orna-a-geo-rpg/id1451775309">Apple App Store</a></div>
+	</div>
+
+	<div id="language-menu">
+		
+			<div class="language-menu-item"><a href="?lang=en">
+				<img src="../../static/img/flags/us.png">
+				English
+			</a></div>
+		
+			<div class="language-menu-item"><a href="?lang=en-gb">
+				<img src="../../static/img/flags/uk.png">
+				English (UK)
+			</a></div>
+		
+			<div class="language-menu-item"><a href="?lang=en-ca">
+				<img src="../../static/img/flags/canada.png">
+				English (CA)
+			</a></div>
+		
+			<div class="language-menu-item"><a href="?lang=en-au">
+				<img src="../../static/img/flags/australia.png">
+				English (AU)
+			</a></div>
+		
+			<div class="language-menu-item"><a href="?lang=fr">
+				<img src="../../static/img/flags/france.png">
+				Français
+			</a></div>
+		
+			<div class="language-menu-item"><a href="?lang=es">
+				<img src="../../static/img/flags/spain.png">
+				Español
+			</a></div>
+		
+			<div class="language-menu-item"><a href="?lang=de">
+				<img src="../../static/img/flags/germany.png">
+				Deutsch
+			</a></div>
+		
+			<div class="language-menu-item"><a href="?lang=ru">
+				<img src="../../static/img/flags/russia.png">
+				Русский
+			</a></div>
+		
+			<div class="language-menu-item"><a href="?lang=pt-br">
+				<img src="../../static/img/flags/brasil.png">
+				Português
+			</a></div>
+		
+			<div class="language-menu-item"><a href="?lang=id">
+				<img src="../../static/img/flags/indonesia.png">
+				Bahasa Indonesia
+			</a></div>
+		
+			<div class="language-menu-item"><a href="?lang=zh-hant">
+				<img src="../../static/img/flags/taiwan.png">
+				繁體中文
+			</a></div>
+		
+			<div class="language-menu-item"><a href="?lang=zh-hans">
+				<img src="../../static/img/flags/china.png">
+				简体中文
+			</a></div>
+		
+			<div class="language-menu-item"><a href="?lang=pl">
+				<img src="../../static/img/flags/poland.png">
+				Polski
+			</a></div>
+		
+			<div class="language-menu-item"><a href="?lang=ro">
+				<img src="../../static/img/flags/romania.png">
+				Română
+			</a></div>
+		
+			<div class="language-menu-item"><a href="?lang=hu">
+				<img src="../../static/img/flags/hungary.png">
+				Magyar
+			</a></div>
+		
+			<div class="language-menu-item"><a href="?lang=uk">
+				<img src="../../static/img/flags/ukraine.png">
+				Українська мова
+			</a></div>
+		
+			<div class="language-menu-item"><a href="?lang=it">
+				<img src="../../static/img/flags/italy.png">
+				Italiano
+			</a></div>
+		
+			<div class="language-menu-item"><a href="?lang=cs">
+				<img src="../../static/img/flags/czech.png">
+				Čeština
+			</a></div>
+		
+			<div class="language-menu-item"><a href="?lang=ko">
+				<img src="../../static/img/flags/korea.png">
+				한국어
+			</a></div>
+		
+			<div class="language-menu-item"><a href="?lang=vi">
+				<img src="../../static/img/flags/vietnam.png">
+				Tiếng Việt
+			</a></div>
+		
+			<div class="language-menu-item"><a href="?lang=nl">
+				<img src="../../static/img/flags/netherlands.png">
+				Nederlands
+			</a></div>
+		
+			<div class="language-menu-item"><a href="?lang=ja">
+				<img src="../../static/img/flags/japan.png">
+				日本語
+			</a></div>
+		
+			<div class="language-menu-item"><a href="?lang=nb">
+				<img src="../../static/img/flags/norway.png">
+				Norsk bokmål
+			</a></div>
+		
+	</div>
+
+	<div class="hero smaller">
+		<h1 class="herotext">Fjern II</h1>
+	</div>
+
+	<div id="cookie-banner">
+		<div class="wraps">
+			Vi vil gjerne bruke informasjonskapseler for å gjøre denne opplevelsen bedre for alle.
+			<hr>
+			<div>
+				<a id="cookie-banner-decline" class="button" target="_blank" href="#">Avslå</a>
+				<a id="cookie-banner-accept" class="button button-cta" target="_blank" href="#">Aksepter</a>
+			</div>
+			<hr>
+			<a target="_blank" href="/privacy/">Privatvern</a>
+		</div>
+	</div>
+
+	
+	<div class="wraps">
+		
+	<div class="page">
+		<div class="codex-page">
+			<div class="codex-page-icon">
+				<img src="../../static/img/spells/heal.png">
+			</div>
+
+			<div class="codex-page-description">
+				Kurerer alle statuseffekter.
+			</div>
+
+			<div class="codex-page-meta">
+				&#9733;10 Ferdighet
+			</div>
+
+			<div class="codex-page-meta">
+				Treffer: Deg selv
+			</div>
+
+			
+			
+			
+
+			
+				<div class="codex-page-meta">
+					Koster: 300 mana
+				</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+				<hr>
+				<h4>Kurérer:</h4>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/poison.png">
+							<span>Forgiftet</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/bleeding.png">
+							<span>Blødning</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/bloodshift.png">
+							<span>Blodskifte</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/burning.png">
+							<span>Brennende</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/windswept.png">
+							<span>Forblåst</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/frozen.png">
+							<span>Frosset</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/paralyzed.png">
+							<span>Paralysert</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/rot.png">
+							<span>Råtning</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/cursed.png">
+							<span>Forbannet</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/toxic.png">
+							<span>Tunggift</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/blind.png">
+							<span>Blind</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/sleep.png">
+							<span>Søvn</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/lulled.png">
+							<span>Lullet</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/drenched.png">
+							<span>Søkkvåt</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/stunned.png">
+							<span>Bedøvet</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/blighted.png">
+							<span>Dragebrann</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/petrified.png">
+							<span>Forsteinet</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/stasis.png">
+							<span>Stasis</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/defense_up.png">
+							<span>Forsvaring</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/attack_up.png">
+							<span>Att ↑</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/attack_up_double.png">
+							<span>Att ↑↑</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/attack_up_temp.png">
+							<span>T. Att ↑</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/magic_up_temp.png">
+							<span>T. Mag ↑</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/magic_up.png">
+							<span>Mag ↑</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/magic_up_double.png">
+							<span>Mag ↑↑</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/defense_up.png">
+							<span>Def ↑</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/defense_up_temp.png">
+							<span>T. Def ↑</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/attack_down.png">
+							<span>Att ↓</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/defense_down.png">
+							<span>Def ↓</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/defense_down_double.png">
+							<span>Def ↓↓</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/defense_down_temp.png">
+							<span>T. Def ↓</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/attack_down_temp.png">
+							<span>T. Att ↓</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/magic_down.png">
+							<span>Mag ↓</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/magic_down_temp.png">
+							<span>T. Mag ↓</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/magic_down_double_temp.png">
+							<span>T. Mag ↓↓</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/magic_down_triple_temp.png">
+							<span>T. Mag ↓↓↓</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/magic_defense_down_temp.png">
+							<span>T. Res ↓</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/attack_down_double_temp.png">
+							<span>T. Att ↓↓</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/attack_down_triple_temp.png">
+							<span>T. Att ↓↓↓</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/defense_down_double_temp.png">
+							<span>T. Def ↓↓</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/defense_down_triple_temp.png">
+							<span>T. Def ↓↓↓</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/magic_defense_down_double_temp.png">
+							<span>T. Res ↓↓</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/magic_defense_down_triple_temp.png">
+							<span>T. Res ↓↓↓</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/magic_up_triple_temp.png">
+							<span>T. Mag ↑↑↑</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/attack_up_triple_temp.png">
+							<span>T. Att ↑↑↑</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/magic_defense_down_double.png">
+							<span>Res ↓↓</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/berserk.png">
+							<span>Dmg ↑</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/attack_down_double_temp.png">
+							<span>T. Dmg ↓</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/attack_down_double_temp.png">
+							<span>T. Dmg ↓↓</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/defense_up_double.png">
+							<span>Def ↑↑</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/defense_up_triple.png">
+							<span>Forsvaring</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/magic_defense_up_triple.png">
+							<span>Forsvaring</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/bosses/castor.png">
+							<span>Castor</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/bosses/pollux.png">
+							<span>Pollux</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/bosses/thronemakers_sekhmet.png">
+							<span>Sekhmets forbannelse</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/defense_up_double_temp.png">
+							<span>T. Def ↑↑</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/defense_up_triple_temp.png">
+							<span>T. Def ↑↑↑</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/magic_defense_up.png">
+							<span>Res ↑</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/magic_defense_up_temp.png">
+							<span>T. Res ↑</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/magic_defense_down.png">
+							<span>Res ↓</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/magic_defense_up_double.png">
+							<span>Res ↑↑</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/attack_up_double_temp.png">
+							<span>T. Att ↑↑</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/magic_up_double_temp.png">
+							<span>T. Mag ↑↑</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/magic_defense_up_double_temp.png">
+							<span>T. Res ↑↑</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/magic_defense_up_triple_temp.png">
+							<span>T. Res ↑↑↑</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/dex_up.png">
+							<span>Dex ↑</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/dex_down_temp.png">
+							<span>T. Dex ↓</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/dex_up_temp.png">
+							<span>T. Dex ↑</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/dex_up_double_temp.png">
+							<span>T. Dex ↑↑</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/dex_up_triple_temp.png">
+							<span>T. Dex ↑↑↑</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/crit_up.png">
+							<span>Crit ↑</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/crit_up_temp.png">
+							<span>T. Crit ↑</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/crit_up_double_temp.png">
+							<span>T. Crit ↑↑</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/crit_up_triple_temp.png">
+							<span>T. Crit ↑↑↑</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/berserk_double.png">
+							<span>All ↑</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/frenzy.png">
+							<span>Frenzy</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/shadowveil.png">
+							<span>Shadowveil</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/channel.png">
+							<span>T. All ↑</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/foresight_up.png">
+							<span>Fremsyn ↑</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/foresight_up_double.png">
+							<span>Fremsyn ↑↑</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/foresight_down.png">
+							<span>Fremsyn ↓</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/break.png">
+							<span>T. All ↓</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/berserk_triple.png">
+							<span>All ↑↑</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/starstruck.png">
+							<span>Stjerneslått</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/doom.png">
+							<span>Undergang</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/break.png">
+							<span>Skjør</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/confuse.png">
+							<span>Forvirret</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/provoke.png">
+							<span>Blink ↑</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/appease.png">
+							<span>Blink ↓</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/provoke_double.png">
+							<span>Blink ↑↑</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/appease_double.png">
+							<span>Blink ↓↓</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/channel.png">
+							<span>T. All ↑↑↑</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/pauldrons1.png">
+							<span>Jernskuldrer</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/pauldrons2.png">
+							<span>Mythrilskuldrer</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/pauldrons3.png">
+							<span>Piggete Skuldre</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/greaves1.png">
+							<span>Jernleggskinner</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/greaves2.png">
+							<span>Mythrilleggskinner</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/greaves3.png">
+							<span>Piggete Leggskinner</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/holy_imbue.png">
+							<span>Livets Tre</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/dark_imbue.png">
+							<span>Dødens Tre</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/aegir.png">
+							<span>Aegir</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/gymir.png">
+							<span>Gymir</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/eistla.png">
+							<span>Eistla</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/asteria.png">
+							<span>Asteria av Olympia</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/atlas.png">
+							<span>Atlas av Olympia</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/ophion.png">
+							<span>Ophion av Olympia</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/tower.png">
+							<span>Ruvende</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/fire_imbue.png">
+							<span>Ild Att</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/ice_imbue.png">
+							<span>Vann Att</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/earth_imbue.png">
+							<span>Jord Att</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/lightning_imbue.png">
+							<span>Lyn Att</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/no_imbue.png">
+							<span>Elementløs</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/fire_wall.png">
+							<span>Ild Def</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/ice_wall.png">
+							<span>Vann Def</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/earth_wall.png">
+							<span>Jord Def</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/lightning_wall.png">
+							<span>Lyn Def</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/holy_wall.png">
+							<span>Hellig Def</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/dark_wall.png">
+							<span>Mørk Def</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/fire_wall.png">
+							<span>Ildimmun</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/ice_wall.png">
+							<span>Vannimmun</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/earth_wall.png">
+							<span>Jordimmun</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/lightning_wall.png">
+							<span>Lynimmun</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/holy_wall.png">
+							<span>Helligimmun</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/dark_wall.png">
+							<span>Mørkimmun</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/fire_wall.png">
+							<span>T. Ildimmun ↑↑</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/ice_wall.png">
+							<span>M. Vannimmun ↑↑</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/earth_wall.png">
+							<span>T. Jordimmun ↑↑</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/lightning_wall.png">
+							<span>M. Lynimmun ↑↑</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/holy_wall.png">
+							<span>T. Helligimmun ↑↑</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/dark_wall.png">
+							<span>M. Mørkimmun ↑↑</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/manaseep.png">
+							<span>Manalekkasje</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/lyon.png">
+							<span>Lyons Merke</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/phoenix.png">
+							<span>Føniksens Løfte</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/fire_aligned.png">
+							<span>Ildjustert</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/ice_aligned.png">
+							<span>Vannjustert</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/earth_aligned.png">
+							<span>Jordjustert</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/lightning_aligned.png">
+							<span>Lynjustert</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/dragon_aligned.png">
+							<span>Dragejustert</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/dark_aligned.png">
+							<span>Mørkejustering</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/holy_aligned.png">
+							<span>Helligjustering</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/arcane_aligned.png">
+							<span>Mystisk Justering</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/wind_aligned.png">
+							<span>Vindjustert</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/fire_rune.png">
+							<span>Ildsegl</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/ice_rune.png">
+							<span>Vannsegl</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/earth_rune.png">
+							<span>Jordsegl</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/lightning_rune.png">
+							<span>Lynsegl</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/dragon_rune.png">
+							<span>Dragesegl</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/dark_rune.png">
+							<span>Mørkesegl</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/holy_rune.png">
+							<span>Helligsegl</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/wind_rune.png">
+							<span>Vindsegl</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/effects/aquila.png">
+							<span>Aquilasegl</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/effects/carina.png">
+							<span>Carinasegl</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/effects/crux.png">
+							<span>Cruxsegl</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/effects/draco.png">
+							<span>Dracosegl</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/effects/lyra.png">
+							<span>Lyrasegl</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/rune_themis.png">
+							<span>Themis</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/rune_selene.png">
+							<span>Selene</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/rune_oceanus.png">
+							<span>Oceanus</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/rune_eos.png">
+							<span>Eos</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/rune_prometheus.png">
+							<span>Prometheus</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/arcane_imbue.png">
+							<span>Mystisk ↑↑</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/dragon_imbue.png">
+							<span>Drage ↑↑</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/fire_rune.png">
+							<span>Ildsykdom</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/ice_rune.png">
+							<span>Vannsykdom</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/earth_rune.png">
+							<span>Jordsykdom</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/lightning_rune.png">
+							<span>Lynsykdom</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/dragon_rune.png">
+							<span>Dragesykdom</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/dark_rune.png">
+							<span>Mørkesykdom</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/holy_rune.png">
+							<span>Helligsykdom</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/wind_rune.png">
+							<span>Vindsykdom</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/gunnr.png">
+							<span>Gunnr</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/hildr.png">
+							<span>Hildr</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/thrud.png">
+							<span>Thrud</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/snotra.png">
+							<span>Snotra</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/kara.png">
+							<span>Kára</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/eir.png">
+							<span>Eir</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/rand.png">
+							<span>Rand ↑↑</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/brynhild.png">
+							<span>Brynhild ↑</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/idun.png">
+							<span>Idun ↑</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/skadi.png">
+							<span>Skadi ↑</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/jord.png">
+							<span>Jord ↑</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/brynhild.png">
+							<span>Brynhild ↑↑</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/idun.png">
+							<span>Idun ↑↑</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/skadi.png">
+							<span>Skadi ↑↑</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/jord.png">
+							<span>Jord ↑↑</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/brynhild.png">
+							<span>Brynhild ↑↑↑</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/idun.png">
+							<span>Idun ↑↑↑</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/skadi.png">
+							<span>Skadi ↑↑↑</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/jord.png">
+							<span>Jord ↑↑↑</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/useables/puzzlemakersambrosia.png">
+							<span>Pusleskapers Ambrosia</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/zagreus.png">
+							<span>Zagreus</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/dumbr.png">
+							<span>Dumbr</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/tempered.png">
+							<span>Impuls ↓</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/tempered_double.png">
+							<span>Impuls ↓↓</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/target_up.png">
+							<span>Mål: Alle</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/holy_imbue.png">
+							<span>Reraise</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/rune_themis.png">
+							<span>Kraften til Titan Themis</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/rune_selene.png">
+							<span>Kraften til Titan Selene</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/rune_oceanus.png">
+							<span>Kraften til Titan Oceanus</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/rune_eos.png">
+							<span>Kraften til Titan Eos</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/rune_prometheus.png">
+							<span>Kraften til Titan Prometheus</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/monsters/frog.png">
+							<span>Frog</span>
+						</div>
+					</div>
+				
+					<div>
+						<div class="drop">
+							<img src="../../static/img/statuses/morrigans_curse.png">
+							<span>Morrigan&#x27;s Curse</span>
+						</div>
+					</div>
+				
+			
+
+			
+
+		</div>
+		<a href="/codex/spells/" class="codex-link">
+			&larr; Gå tilbake
+		</a>
+	</div>
+
+	</div>
+	
+
+	<footer>
+		<div class="footer-column">
+			<a class="footer-link" href="/">Hjem</a>
+			<a class="footer-link" href="/calendar/">Begivenhetskalender</a>
+			<a class="footer-link" href="/releases/">Oppdateringsnotater</a>
+			<a class="footer-link" href="/travelers-guild/">Vandringsklan</a>
+			<a class="footer-link" target="_blank" href="https://blog.ornarpg.com/">Blogg</a>
+			<a class="footer-link" target="_blank" href="https://merch.northernforge.com/">Varer</a>
+		</div>
+
+		<div class="footer-column">
+
+			<a class="footer-link" target="_blank" href="https://www.reddit.com/r/OrnaRPG/">Reddit</a>
+			<a class="footer-link" target="_blank" href="https://www.facebook.com/ornarpg/">Facebook</a>
+			<a class="footer-link" target="_blank" href="https://www.twitter.com/OrnaRPG/">Twitter</a>
+
+			<div class="sep"></div>
+
+			<a class="footer-link" href="/terms/">Vilkår for Bruk</a>
+			<a class="footer-link" href="/privacy/">Privatvern</a>
+			<a class="footer-link" href="/attributions/">Kreditter og Attributasjoner</a>
+
+			<div class="sep"></div>
+
+			<div>&copy; 2026 <a href="https://northernforge.com" target="_blank">Northern Forge Studios Inc</a></div>
+
+			<div class="sep"></div>
+			<div>Laget i Kanada &#127809;</div>
+
+			<div class="footer-ctas">
+				<a target="_blank" title="Download from Google Play" href="https://play.google.com/store/apps/details?id=playorna.com.orna&utm_source=website&utm_medium=website&utm_campaign=website">
+					<img class="google-play-badge" src="../../static/img/google-play-badge.png">
+				</a>
+	
+				<a target="_blank" title="Download from the App Store" href="https://apps.apple.com/us/app/orna-a-geo-rpg/id1451775309">
+					<img class="google-play-badge" src="../../static/img/app-store-badge.png">
+				</a>
+			</div>
+
+			<div class="sep"></div>
+
+			<a href="https://northernforge.com" target="_blank">
+				<img src="../../static/img/northern_forge_small.png">
+			</a>
+		</div>
+	</footer>
+
+	
+</body>
+
+</html>

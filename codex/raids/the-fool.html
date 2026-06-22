@@ -1,0 +1,814 @@
+<!doctype html>
+<html lang="nb">
+
+
+<head>
+	
+	<meta name="google-site-verification" content="uBSAwQ1WFIIyInSl2ELElKwJpWOWjKVhb82XIpgHa5Q" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="robots" content="index,follow" />
+	<meta name="theme-color" content="#000" />
+	<meta name="description" content="Idioten: Once a Fool, twice a Fool, thrice a Fool he was. Always a Fool, never a Fool, if only he …" />
+	<meta name="keywords" content="Idioten,GPS MMO, Location based, RPG, MMORPG, Android, mobile game, geolocation game" />
+
+	
+	<meta property="og:title" content="Idioten - Orna RPG Series" />
+	<meta property="og:description"
+		content="Idioten: Once a Fool, twice a Fool, thrice a Fool he was. Always a Fool, never a Fool, if only he …" />
+	<meta property="og:image" content="../../static/img/bosses/fool.png" />
+	
+
+	<link rel="shortcut icon" href="../../static/img/favicon.png">
+	<title>Idioten / Kodeks / Orna RPG Series | New Old RPGs</title>
+
+	<script>
+		window.REALM = '';
+		window.APP_VERSION = '';
+		window.CONTENT_VERSION = '';
+		window.STATIC_URL = '';
+		window.LANG_CODE = 'nb';
+	</script>
+
+	
+	
+	<link  rel="stylesheet" href="../../static/vendor-BbLJ9bNe.css" />
+<link  rel="stylesheet" href="../../static/web-BZxCBmLY.css" />
+<link  rel="stylesheet" href="../../static/fonts-BWxys5pk.css" />
+<script type="module" crossorigin="" src="../../static/web-CcFzXSIx.js"></script>
+<link href="../../static/vendor-DTF-i4ak.js" type="text/javascript" crossorigin="anonymous" rel="modulepreload" as="script" />
+<link href="../../static/modulepreload-polyfill-CeUlryTZ.js" type="text/javascript" crossorigin="anonymous" rel="modulepreload" as="script" />
+</head>
+
+<body>
+	
+	<nav id="nav">
+		<a class="branding" href="/">
+			<img title="Orna: A GPS RPG" src="../../static/img/orna2.png">
+		</a>
+
+		<a class="nav-item nav-item-desktop" href="/calendar/"> Begivenheter</a>
+		<a class="nav-item nav-item-desktop" href="/releases/"> Oppdateringer</a>
+		<a class="nav-item nav-item-desktop" href="/codex/">Kodeks</a>
+		<a class="nav-item nav-item-desktop" target="_blank" href="https://blog.ornarpg.com/">Blog</a>
+		<a class="nav-item nav-item-desktop" target="_blank" href="https://merch.northernforge.com/"> Varer</a>
+		<a class="nav-item nav-item-desktop nav-item-lang" id="nav-language-link"><img src="../../static/img/flags/norway.png"></a>
+
+		<div class="mobile-menu-link" id="mobile-menu-link">
+			<div class="mobile-menu-link-bar"></div>
+			<div class="mobile-menu-link-bar"></div>
+			<div class="mobile-menu-link-bar"></div>
+		</div>
+	</nav>
+
+	<div id="mobile-menu">
+		<div class="mobile-menu-item"><a href="/calendar/">Begivenheter</a></div>
+		<div class="mobile-menu-item"><a href="/releases/"> Oppdateringer</a></div>
+		<div class="mobile-menu-item"><a href="/codex/"> Kodeks</a></div>
+		<div class="mobile-menu-item"><a target="_blank" href="https://blog.ornarpg.com/">Blog</a></div>
+		<div class="mobile-menu-item"><a target="_blank" href="https://merch.northernforge.com/"> Varer</a></div>
+		<div class="mobile-menu-item"><a target="_blank" href="https://play.google.com/store/apps/details?id=playorna.com.orna&utm_source=website&utm_medium=website&utm_campaign=website">Google Play</a></div>
+		<div class="mobile-menu-item"><a target="_blank" href="https://apps.apple.com/us/app/orna-a-geo-rpg/id1451775309">Apple App Store</a></div>
+	</div>
+
+	<div id="language-menu">
+		
+			<div class="language-menu-item"><a href="?lang=en">
+				<img src="../../static/img/flags/us.png">
+				English
+			</a></div>
+		
+			<div class="language-menu-item"><a href="?lang=en-gb">
+				<img src="../../static/img/flags/uk.png">
+				English (UK)
+			</a></div>
+		
+			<div class="language-menu-item"><a href="?lang=en-ca">
+				<img src="../../static/img/flags/canada.png">
+				English (CA)
+			</a></div>
+		
+			<div class="language-menu-item"><a href="?lang=en-au">
+				<img src="../../static/img/flags/australia.png">
+				English (AU)
+			</a></div>
+		
+			<div class="language-menu-item"><a href="?lang=fr">
+				<img src="../../static/img/flags/france.png">
+				Français
+			</a></div>
+		
+			<div class="language-menu-item"><a href="?lang=es">
+				<img src="../../static/img/flags/spain.png">
+				Español
+			</a></div>
+		
+			<div class="language-menu-item"><a href="?lang=de">
+				<img src="../../static/img/flags/germany.png">
+				Deutsch
+			</a></div>
+		
+			<div class="language-menu-item"><a href="?lang=ru">
+				<img src="../../static/img/flags/russia.png">
+				Русский
+			</a></div>
+		
+			<div class="language-menu-item"><a href="?lang=pt-br">
+				<img src="../../static/img/flags/brasil.png">
+				Português
+			</a></div>
+		
+			<div class="language-menu-item"><a href="?lang=id">
+				<img src="../../static/img/flags/indonesia.png">
+				Bahasa Indonesia
+			</a></div>
+		
+			<div class="language-menu-item"><a href="?lang=zh-hant">
+				<img src="../../static/img/flags/taiwan.png">
+				繁體中文
+			</a></div>
+		
+			<div class="language-menu-item"><a href="?lang=zh-hans">
+				<img src="../../static/img/flags/china.png">
+				简体中文
+			</a></div>
+		
+			<div class="language-menu-item"><a href="?lang=pl">
+				<img src="../../static/img/flags/poland.png">
+				Polski
+			</a></div>
+		
+			<div class="language-menu-item"><a href="?lang=ro">
+				<img src="../../static/img/flags/romania.png">
+				Română
+			</a></div>
+		
+			<div class="language-menu-item"><a href="?lang=hu">
+				<img src="../../static/img/flags/hungary.png">
+				Magyar
+			</a></div>
+		
+			<div class="language-menu-item"><a href="?lang=uk">
+				<img src="../../static/img/flags/ukraine.png">
+				Українська мова
+			</a></div>
+		
+			<div class="language-menu-item"><a href="?lang=it">
+				<img src="../../static/img/flags/italy.png">
+				Italiano
+			</a></div>
+		
+			<div class="language-menu-item"><a href="?lang=cs">
+				<img src="../../static/img/flags/czech.png">
+				Čeština
+			</a></div>
+		
+			<div class="language-menu-item"><a href="?lang=ko">
+				<img src="../../static/img/flags/korea.png">
+				한국어
+			</a></div>
+		
+			<div class="language-menu-item"><a href="?lang=vi">
+				<img src="../../static/img/flags/vietnam.png">
+				Tiếng Việt
+			</a></div>
+		
+			<div class="language-menu-item"><a href="?lang=nl">
+				<img src="../../static/img/flags/netherlands.png">
+				Nederlands
+			</a></div>
+		
+			<div class="language-menu-item"><a href="?lang=ja">
+				<img src="../../static/img/flags/japan.png">
+				日本語
+			</a></div>
+		
+			<div class="language-menu-item"><a href="?lang=nb">
+				<img src="../../static/img/flags/norway.png">
+				Norsk bokmål
+			</a></div>
+		
+	</div>
+
+	<div class="hero smaller">
+		<h1 class="herotext">Idioten</h1>
+	</div>
+
+	<div id="cookie-banner">
+		<div class="wraps">
+			Vi vil gjerne bruke informasjonskapseler for å gjøre denne opplevelsen bedre for alle.
+			<hr>
+			<div>
+				<a id="cookie-banner-decline" class="button" target="_blank" href="#">Avslå</a>
+				<a id="cookie-banner-accept" class="button button-cta" target="_blank" href="#">Aksepter</a>
+			</div>
+			<hr>
+			<a target="_blank" href="/privacy/">Privatvern</a>
+		</div>
+	</div>
+
+	
+	<div class="wraps">
+		
+	<div class="page">
+		<div class="codex-page">
+			<div class="codex-page-icon">
+				<img src="../../static/img/bosses/fool.png" class="">
+			</div>
+
+			
+			<div class="codex-page-description">
+				Once a Fool, twice a Fool, thrice a Fool he was. Always a Fool, never a Fool, if only he knew of combat.
+			</div>
+			
+
+			
+			<div class="codex-page-description codex-page-description-highlight">
+				Begivenhet: Aprils Narr
+			</div>
+			
+
+			
+			
+			<div class="codex-page-meta">
+				<strong>Klasse:</strong> &#9733;6
+			</div>
+
+			
+			<div class="codex-page-meta">
+				<strong>HP:</strong> 8 160 000
+			</div>
+			
+
+			<div>
+				
+				<div class="codex-page-tag">
+					✓ Verdenstokt
+				</div>
+				
+				
+				<div class="codex-page-tag">
+					✓ Kongeriketokt
+				</div>
+				
+				
+			</div>
+
+			
+
+			
+
+			
+
+			
+				<hr>
+				<h4>Ferdigheter:</h4>
+				
+					
+					<div>
+						<a class="drop" href="/codex/spells/toxicstrike/">
+							<img src="../../static/img/spells/poison.png">
+							<span>Tunggiftsslag</span>
+						</a>
+					</div>
+					
+				
+					
+					<div>
+						<a class="drop" href="/codex/spells/stone-stare/">
+							<img src="../../static/img/spells/flare.png">
+							<span>Steinstirring</span>
+						</a>
+					</div>
+					
+				
+					
+					<div>
+						<a class="drop" href="/codex/spells/wail/">
+							<img src="../../static/img/spells/nightmare.png">
+							<span>Skrik</span>
+						</a>
+					</div>
+					
+				
+					
+					<div>
+						<a class="drop" href="/codex/spells/annihilation/">
+							<img src="../../static/img/spells/meteor.png">
+							<span>Utslettelse</span>
+						</a>
+					</div>
+					
+				
+					
+					<div>
+						<a class="drop" href="/codex/spells/catastrophe/">
+							<img src="../../static/img/spells/nightmare.png">
+							<span>Katastrofe</span>
+						</a>
+					</div>
+					
+				
+					
+					<div>
+						<a class="drop" href="/codex/spells/coup-de-grace-2/">
+							<img src="../../static/img/spells/multi_attack.png">
+							<span>Coup de Grace</span>
+						</a>
+					</div>
+					
+				
+					
+					<div>
+						<a class="drop" href="/codex/spells/putrid-breath/">
+							<img src="../../static/img/spells/poison.png">
+							<span>Skitten Pust</span>
+						</a>
+					</div>
+					
+				
+					
+					<div>
+						<a class="drop" href="/codex/spells/quasar/">
+							<img src="../../static/img/spells/nova.png">
+							<span>Kvasar</span>
+						</a>
+					</div>
+					
+				
+					
+					<div>
+						<a class="drop" href="/codex/spells/blast-iii/">
+							<img src="../../static/img/spells/blast.png">
+							<span>Spreng III</span>
+						</a>
+					</div>
+					
+				
+					
+					<div>
+						<a class="drop" href="/codex/spells/cockatrice-breath/">
+							<img src="../../static/img/bosses/cockatrice.png">
+							<span>Cockatricens Pust</span>
+						</a>
+					</div>
+					
+				
+					
+					<div>
+						<a class="drop" href="/codex/spells/great-mimics-mischief/">
+							<img src="../../static/img/monsters/great_mimic.png">
+							<span>Stor Mimics Ondskap</span>
+						</a>
+					</div>
+					
+				
+					
+					<div>
+						<a class="drop" href="/codex/spells/dispel-ii/">
+							<img src="../../static/img/spells/heal.png">
+							<span>Fjern II</span>
+						</a>
+					</div>
+					
+				
+					
+					<div>
+						<a class="drop" href="/codex/spells/fey-flame-v/">
+							<img src="../../static/img/spells/flame.png">
+							<span>Fey Flamme V</span>
+						</a>
+					</div>
+					
+				
+					
+					<div>
+						<a class="drop" href="/codex/spells/fey-frost-v/">
+							<img src="../../static/img/spells/ice.png">
+							<span>Fey Frost V</span>
+						</a>
+					</div>
+					
+				
+					
+					<div>
+						<a class="drop" href="/codex/spells/fey-spark-v/">
+							<img src="../../static/img/spells/spark.png">
+							<span>Fey Lyn V</span>
+						</a>
+					</div>
+					
+				
+					
+					<div>
+						<a class="drop" href="/codex/spells/fey-tremor-v/">
+							<img src="../../static/img/spells/quake.png">
+							<span>Fey Jordskjelv IV</span>
+						</a>
+					</div>
+					
+				
+					
+					<div>
+						<a class="drop" href="/codex/spells/miasma-iii/">
+							<img src="../../static/img/spells/blight.png">
+							<span>Miasma III</span>
+						</a>
+					</div>
+					
+				
+			
+
+
+			
+
+			
+
+			
+				<hr>
+				<h4>Slipper:</h4>
+				
+					<div>
+						<a class="drop" href="/codex/items/arena-token/">
+							<img src="../../static/img/useables/arena_token.png">
+							<span>Arenamynt</span>
+						</a>
+					</div>
+				
+					<div>
+						<a class="drop" href="/codex/items/attack-tonic/">
+							<img src="../../static/img/useables/attack_tonic.png">
+							<span>Angrepsdrikk</span>
+						</a>
+					</div>
+				
+					<div>
+						<a class="drop" href="/codex/items/defense-tonic/">
+							<img src="../../static/img/useables/defense_tonic.png">
+							<span>Forsvarsdrikk</span>
+						</a>
+					</div>
+				
+					<div>
+						<a class="drop" href="/codex/items/magic-defense-tonic/">
+							<img src="../../static/img/useables/magic_defense_tonic.png">
+							<span>Magimotstandsdrikk</span>
+						</a>
+					</div>
+				
+					<div>
+						<a class="drop" href="/codex/items/ring-of-restraint/">
+							<img src="../../static/img/acc/sacrifice_ring.png">
+							<span>Tilbakeholdenhetens Ring</span>
+						</a>
+					</div>
+				
+					<div>
+						<a class="drop" href="/codex/items/beheaded-tricksters-pumpkinhead/">
+							<img src="../../static/img/armor/beheaded_tricksters_pumpkinhead.png">
+							<span>Beheaded Trickster&#x27;s Pumpkinhead</span>
+						</a>
+					</div>
+				
+					<div>
+						<a class="drop" href="/codex/items/dioscuri-mead/">
+							<img src="../../static/img/useables/dioscuri_mead.png">
+							<span>Dioscuri Mjød</span>
+						</a>
+					</div>
+				
+					<div>
+						<a class="drop" href="/codex/items/skeleton-key/">
+							<img src="../../static/img/useables/gauntlet_key.png">
+							<span>Skjelettnøkkel</span>
+						</a>
+					</div>
+				
+					<div>
+						<a class="drop" href="/codex/items/speed-tonic/">
+							<img src="../../static/img/useables/speed_tonic.png">
+							<span>Hastighetsdrikk</span>
+						</a>
+					</div>
+				
+					<div>
+						<a class="drop" href="/codex/items/darkrift-fragment/">
+							<img src="../../static/img/useables/darkrift_fragment.png">
+							<span>Darkrift Fragment</span>
+						</a>
+					</div>
+				
+					<div>
+						<a class="drop" href="/codex/items/mnemosynes-amphora/">
+							<img src="../../static/img/wards/mnemosynesamphora.png">
+							<span>Mnemosyne&#x27;s Amphora</span>
+						</a>
+					</div>
+				
+					<div>
+						<a class="drop" href="/codex/items/strangers-gift/">
+							<img src="../../static/img/useables/present.png">
+							<span>En Fremmed&#x27;s Gave</span>
+						</a>
+					</div>
+				
+					<div>
+						<a class="drop" href="/codex/items/affinity-candle/">
+							<img src="../../static/img/useables/affinity_candle.png">
+							<span>Affinitetstearinlys</span>
+						</a>
+					</div>
+				
+					<div>
+						<a class="drop" href="/codex/items/arch-gadget/">
+							<img src="../../static/img/acc/gadget.png">
+							<span>Høygadget</span>
+						</a>
+					</div>
+				
+					<div>
+						<a class="drop" href="/codex/items/arch-gizmo/">
+							<img src="../../static/img/acc/gizmo.png">
+							<span>Høygizmo</span>
+						</a>
+					</div>
+				
+					<div>
+						<a class="drop" href="/codex/items/bag-of-treats/">
+							<img src="../../static/img/acc/bag_of_treats.png">
+							<span>Pose med Godsaker</span>
+						</a>
+					</div>
+				
+					<div>
+						<a class="drop" href="/codex/items/bag-of-tricks/">
+							<img src="../../static/img/acc/bag_of_tricks.png">
+							<span>Pose med Triks</span>
+						</a>
+					</div>
+				
+					<div>
+						<a class="drop" href="/codex/items/beheaded-stargazers-candlehead/">
+							<img src="../../static/img/armor/beheaded_stargazers_candlehead.png">
+							<span>Beheaded Stargazer&#x27;s Candlehead</span>
+						</a>
+					</div>
+				
+					<div>
+						<a class="drop" href="/codex/items/candy-cane/">
+							<img src="../../static/img/weapons/candy_cane.png">
+							<span>Sukkerstang</span>
+						</a>
+					</div>
+				
+					<div>
+						<a class="drop" href="/codex/items/caroling-lute/">
+							<img src="../../static/img/weapons/carol_lute.png">
+							<span>Julesangslute</span>
+						</a>
+					</div>
+				
+					<div>
+						<a class="drop" href="/codex/items/dioscuri-magic-ring/">
+							<img src="../../static/img/acc/mage_ring.png">
+							<span>Dioscuri Magisk Ring</span>
+						</a>
+					</div>
+				
+					<div>
+						<a class="drop" href="/codex/items/dioscuri-ring/">
+							<img src="../../static/img/acc/warrior_ring.png">
+							<span>Dioscuri Ring</span>
+						</a>
+					</div>
+				
+					<div>
+						<a class="drop" href="/codex/items/excalibur/">
+							<img src="../../static/img/weapons/ljosalfar_sword.png">
+							<span>Excalibur</span>
+						</a>
+					</div>
+				
+					<div>
+						<a class="drop" href="/codex/items/north-star/">
+							<img src="../../static/img/acc/north_star.png">
+							<span>Nordstjerne</span>
+						</a>
+					</div>
+				
+					<div>
+						<a class="drop" href="/codex/items/presents/">
+							<img src="../../static/img/acc/presents.png">
+							<span>Presanger!</span>
+						</a>
+					</div>
+				
+					<div>
+						<a class="drop" href="/codex/items/ring-of-dawn/">
+							<img src="../../static/img/acc/warrior_ring.png">
+							<span>Soloppgangsring</span>
+						</a>
+					</div>
+				
+					<div>
+						<a class="drop" href="/codex/items/ring-of-day/">
+							<img src="../../static/img/acc/warrior_ring.png">
+							<span>Dagens Ring</span>
+						</a>
+					</div>
+				
+					<div>
+						<a class="drop" href="/codex/items/ring-of-night/">
+							<img src="../../static/img/acc/cursed_ring.png">
+							<span>Nattens Ring</span>
+						</a>
+					</div>
+				
+					<div>
+						<a class="drop" href="/codex/items/surtrs-sword/">
+							<img src="../../static/img/weapons/surtr_sword.png">
+							<span>Surtrs Sverd</span>
+						</a>
+					</div>
+				
+					<div>
+						<a class="drop" href="/codex/items/top-hat/">
+							<img src="../../static/img/armor/top_hat.png">
+							<span>Flosshatt</span>
+						</a>
+					</div>
+				
+					<div>
+						<a class="drop" href="/codex/items/arisen-fairys-ring/">
+							<img src="../../static/img/acc/fairy_ring.png">
+							<span>Evigvarende Fes Ring</span>
+						</a>
+					</div>
+				
+					<div>
+						<a class="drop" href="/codex/items/scarab-amulet/">
+							<img src="../../static/img/armor/kheper_amulet.png">
+							<span>Scarab Amulet</span>
+						</a>
+					</div>
+				
+					<div>
+						<a class="drop" href="/codex/items/vulcans-brew/">
+							<img src="../../static/img/useables/vulcans_brew.png">
+							<span>Vulcans Brygg</span>
+						</a>
+					</div>
+				
+					<div>
+						<a class="drop" href="/codex/items/clurichaun-arrows/">
+							<img src="../../static/img/wards/poison_arrows.png">
+							<span>Clurichaunpiler</span>
+						</a>
+					</div>
+				
+					<div>
+						<a class="drop" href="/codex/items/high-phoenixsong/">
+							<img src="../../static/img/weapons/gold_flute.png">
+							<span>Høy Fønikssang</span>
+						</a>
+					</div>
+				
+					<div>
+						<a class="drop" href="/codex/items/lady-of-the-lake/">
+							<img src="../../static/img/weapons/blue_flame.png">
+							<span>Innsjøens Dame</span>
+						</a>
+					</div>
+				
+					<div>
+						<a class="drop" href="/codex/items/ring-of-dusk/">
+							<img src="../../static/img/acc/cursed_ring.png">
+							<span>Skumringsring</span>
+						</a>
+					</div>
+				
+					<div>
+						<a class="drop" href="/codex/items/vulcan-buckler/">
+							<img src="../../static/img/wards/buckler.png">
+							<span>Vulcan Buckler</span>
+						</a>
+					</div>
+				
+					<div>
+						<a class="drop" href="/codex/items/vulcan-charm/">
+							<img src="../../static/img/acc/golden_crystal.png">
+							<span>Vulcans Amulett</span>
+						</a>
+					</div>
+				
+					<div>
+						<a class="drop" href="/codex/items/arisen-kings-crown/">
+							<img src="../../static/img/armor/lyon_crown.png">
+							<span>Evigvarende Konges Krone</span>
+						</a>
+					</div>
+				
+					<div>
+						<a class="drop" href="/codex/items/ortanite/">
+							<img src="../../static/img/materials/ortanite.png">
+							<span>Ortanitt</span>
+						</a>
+					</div>
+				
+					<div>
+						<a class="drop" href="/codex/items/finesses-enchanted-epee/">
+							<img src="../../static/img/weapons/finesse_enchanted_epee_arisen.png">
+							<span>Finesses Fortryllede Epee</span>
+						</a>
+					</div>
+				
+					<div>
+						<a class="drop" href="/codex/items/finesses-greatsword/">
+							<img src="../../static/img/weapons/finesse_greatsword_arisen.png">
+							<span>Finesses Slagsverd</span>
+						</a>
+					</div>
+				
+					<div>
+						<a class="drop" href="/codex/items/finesses-katana/">
+							<img src="../../static/img/weapons/finesse_katana_arisen.png">
+							<span>Finesses Katana</span>
+						</a>
+					</div>
+				
+					<div>
+						<a class="drop" href="/codex/items/finesses-shotel/">
+							<img src="../../static/img/weapons/finesse_shotel_arisen.png">
+							<span>Finesses Shotel</span>
+						</a>
+					</div>
+				
+					<div>
+						<a class="drop" href="/codex/items/old-hallowed-blade/">
+							<img src="../../static/img/weapons/hallowed_blade.png">
+							<span>Gamle Helliggjorte Våpen</span>
+						</a>
+					</div>
+				
+			
+		</div>
+		<a href="/codex/raids/" class="codex-link">
+			&larr; Gå tilbake
+		</a>
+	</div>
+
+	</div>
+	
+
+	<footer>
+		<div class="footer-column">
+			<a class="footer-link" href="/">Hjem</a>
+			<a class="footer-link" href="/calendar/">Begivenhetskalender</a>
+			<a class="footer-link" href="/releases/">Oppdateringsnotater</a>
+			<a class="footer-link" href="/travelers-guild/">Vandringsklan</a>
+			<a class="footer-link" target="_blank" href="https://blog.ornarpg.com/">Blogg</a>
+			<a class="footer-link" target="_blank" href="https://merch.northernforge.com/">Varer</a>
+		</div>
+
+		<div class="footer-column">
+
+			<a class="footer-link" target="_blank" href="https://www.reddit.com/r/OrnaRPG/">Reddit</a>
+			<a class="footer-link" target="_blank" href="https://www.facebook.com/ornarpg/">Facebook</a>
+			<a class="footer-link" target="_blank" href="https://www.twitter.com/OrnaRPG/">Twitter</a>
+
+			<div class="sep"></div>
+
+			<a class="footer-link" href="/terms/">Vilkår for Bruk</a>
+			<a class="footer-link" href="/privacy/">Privatvern</a>
+			<a class="footer-link" href="/attributions/">Kreditter og Attributasjoner</a>
+
+			<div class="sep"></div>
+
+			<div>&copy; 2026 <a href="https://northernforge.com" target="_blank">Northern Forge Studios Inc</a></div>
+
+			<div class="sep"></div>
+			<div>Laget i Kanada &#127809;</div>
+
+			<div class="footer-ctas">
+				<a target="_blank" title="Download from Google Play" href="https://play.google.com/store/apps/details?id=playorna.com.orna&utm_source=website&utm_medium=website&utm_campaign=website">
+					<img class="google-play-badge" src="../../static/img/google-play-badge.png">
+				</a>
+	
+				<a target="_blank" title="Download from the App Store" href="https://apps.apple.com/us/app/orna-a-geo-rpg/id1451775309">
+					<img class="google-play-badge" src="../../static/img/app-store-badge.png">
+				</a>
+			</div>
+
+			<div class="sep"></div>
+
+			<a href="https://northernforge.com" target="_blank">
+				<img src="../../static/img/northern_forge_small.png">
+			</a>
+		</div>
+	</footer>
+
+	
+</body>
+
+</html>
